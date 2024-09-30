@@ -1,0 +1,48 @@
+package com.pom.hrm.practice;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+class SelectMultipleOptions
+{
+	public static WebDriver driver;
+	
+	public SelectMultipleOptions()
+	{
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+	}
+	public void selectMultipleDD()
+	{
+		driver.get("https://letcode.in/dropdowns");
+		driver.manage().window().maximize();
+		WebElement selectHero=driver.findElement(By.id("superheros"));
+		Select select=new Select(selectHero);
+		boolean multi=select.isMultiple();
+		System.out.println("multi is allow"+multi);
+		select.selectByValue("am");
+		select.selectByValue("bt");
+		driver.close();
+		
+	}
+	public void multipleOptionsWithoutSelect()
+	{
+		driver.get("https://coreui.io/bootstrap/docs/forms/multi-select/");
+		driver.manage().window().maximize();
+		
+	}
+}
+public class MultipleOptionsDropDown {
+	public static void main(String args[])
+	{
+		SelectMultipleOptions smo=new SelectMultipleOptions();
+		smo.selectMultipleDD();
+		
+	}
+
+}

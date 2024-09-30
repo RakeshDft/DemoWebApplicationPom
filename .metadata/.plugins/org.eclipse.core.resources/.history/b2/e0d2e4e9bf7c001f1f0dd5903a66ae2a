@@ -1,0 +1,75 @@
+package com.cucumber.demoopencart.UpdatedStepDef;
+
+import com.cucumber.demoopencart.Base.Hooks;
+import com.cucumber.demoopencart.UpdatedPages.RegisterPage;
+
+import io.cucumber.java.en.Then;
+
+public class RegisterDef extends RegisterPage {
+	@Then("I should click on MyAccount .")
+	public void i_should_click_on_my_account() {
+		clickMyAccount();
+	}
+
+	@Then("I should click on Register.")
+	public void i_should_click_on_register() {
+		
+		clickRegistr();
+		
+	}
+	@Then("I should see Registerpage title as {string}")
+	public void i_should_see_page_title_as(String string) throws InterruptedException {
+		verifyRegisterPageTitle(string);
+		//Thread.sleep(3000);
+	    
+	}
+	@Then("I  see RegisterPage webelement {string}")
+	public void i_see_webelement(String string) {
+		verifyTextFromRegisterPage(string);
+	}
+	@Then("I should enter FirstName {string}")
+	public void i_eneter_first_name(String string) throws InterruptedException {
+	    enterFirstName(string);
+	    //Thread.sleep(3000);
+	}
+
+@Then("I should enter Last Name {string}")
+public void i_should_enter_last_name(String string) throws InterruptedException {
+enterLastname(string);
+	//Thread.sleep(2000);
+}
+
+@Then("I should enter E-Mail {string}")
+public void i_should_enter_e_mail(String string) throws InterruptedException {
+	enterEmail(string);
+	//Thread.sleep(2000);
+}
+
+@Then("I should enter password {string}")
+public void i_should_enter_password(String string) throws InterruptedException {
+	RegisterPage.enterPassword(string);
+	//Thread.sleep(2000);
+   
+}
+
+@Then("I should agree the register.")
+public void i_should_agree_the_register() throws InterruptedException {
+	RegisterPage.dragSubscribe();
+}
+@Then("I should check the Agree.")
+public void i_should_check_the_agree() throws InterruptedException {
+    
+ RegisterPage.checkAgree(); 
+ }
+ 
+
+
+@Then("I should click on Continue.")
+public void i_should_click_on_continue() throws InterruptedException {
+	RegisterPage.clickContinue();
+	Thread.sleep(4000);
+   
+}
+
+
+}

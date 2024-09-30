@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+    <fullyQualifiedTypeName name="com.pom.hrm.practice.TypesOfScreenshotTest"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.TakesScreenshot"/>
+    <fullyQualifiedTypeName name="com.pom.hrm.practice.SelectMultipleOptions"/>
+    <fullyQualifiedTypeName name="com.pom.hrm.practice.TestJSMethods"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+    <fullyQualifiedTypeName name="com.pom.hrm.Pages.HRMDashboardPage"/>
+    <fullyQualifiedTypeName name="com.pom.hrm.Pages.HRMLoginPage"/>
+    <fullyQualifiedTypeName name="com.cucumber.demoopencart.Base.Driver"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.interactions.Actions"/>
+    <fullyQualifiedTypeName name="com.pom.hrm.practice.EncapsulationTest1"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.WebDriverWait"/>
+    <fullyQualifiedTypeName name="com.cucumber.demoopencart.UpdatedPages.RegisterPage"/>
+    <fullyQualifiedTypeName name="io.cucumber.testng.CucumberOptions"/>
+    <fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
+    <fullyQualifiedTypeName name="io.cucumber.junit.Cucumber"/>
+    <fullyQualifiedTypeName name="org.testng.Assert"/>
+    <fullyQualifiedTypeName name="com.pom.hrm.testcases.HRM_LoginTests"/>
+    <fullyQualifiedTypeName name="com.pom.hrm.Pages.HRM_RecruitmentPage"/>
+    <fullyQualifiedTypeName name="com.pom.demowebshopapp.pages.HomePage"/>
+    <fullyQualifiedTypeName name="com.pom.demowebshopapp.testcases.HomeTest"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+    <fullyQualifiedTypeName name="com.pom.demowebshopapp.base.ActionEngine"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
+    <fullyQualifiedTypeName name="junit.framework.Assert"/>
+    <fullyQualifiedTypeName name="com.pom.demowebshopapp.pages.LoginPage"/>
+</qualifiedTypeNameHistroy>

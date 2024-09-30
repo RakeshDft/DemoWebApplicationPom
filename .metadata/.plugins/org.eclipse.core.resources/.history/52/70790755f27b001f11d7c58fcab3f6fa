@@ -1,0 +1,23 @@
+package com.pom.hrm.practice;
+
+public class EncapsulationTest1 {
+	private int sub=10;
+	private String name="raj";
+	public void display()
+	{
+		System.out.println("iam display method");
+	}
+	public int getSub() {
+		return sub;
+	}
+	public void setSub(int sub) {
+		this.sub = sub;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+
+}

@@ -1,0 +1,9 @@
+Feature: Register functionality.
+Background:
+Given I navigate to the web application
+Then I should see page tiltle as "Your Store"
+And I see web element "Desktops"
+
+
+Scenario: Verify user is on DashBoard
+And I close the browser

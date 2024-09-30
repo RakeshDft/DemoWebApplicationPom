@@ -1,0 +1,106 @@
+package com.cucumber.demoopencart.UpdatedPages;
+
+import static org.testng.Assert.assertEquals;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+
+import com.cucumber.demoopencart.Base.Hooks;
+
+public class RegisterPage extends Hooks{
+	
+	static
+	{
+		PageFactory.initElements(driver, RegisterPage.class);
+	}
+	
+	@FindBy(xpath="//span[text()='My Account']")
+	private static WebElement MyAccountLink;
+	@FindBy(xpath="//a[text()='Register']")
+	private static WebElement RegisterLink;
+	@FindBy(xpath="//legend[text()='Your Personal Details']")
+	private static WebElement YourDetailsTextInRegisterPage;
+	@FindBy(xpath = "//input[@name='firstname']")
+	private static WebElement FirstnameReg;
+	
+	@FindBy(xpath = "//input[@id='input-lastname']")
+	private static WebElement LastnameReg;
+	
+	@FindBy(xpath = "//input[@id='input-email']")
+	private static WebElement EmailnameReg;
+	
+	@FindBy(xpath = "//input[@id='input-password']")
+	private static WebElement Password;
+	
+	@FindBy(xpath="//button[text()='Continue']")
+	private static WebElement ContinueBtn;
+	@FindBy(xpath="(//input[@type='hidden'])[3]")
+	private static WebElement Agree_drag;
+	@FindBy(xpath="//input[@name='agree']")
+	private static WebElement chechAgree;
+	
+	public static void clickMyAccount()
+	{
+		clickWebElement(MyAccountLink,"MyAccount");
+	}
+	public static void clickRegistr()
+	{
+		
+		//clickWebElement(RegisterLink, "Register");
+		clickWebElementwithAction(RegisterLink, "Register");
+	}
+	public static boolean verifyRegisterPageTitle(String title)
+		{
+		 String actualTitle=title;
+		  String expectedTitle=driver.getTitle();
+		  System.out.println("the title of Register is"+expectedTitle);
+		 assertEquals(actualTitle, expectedTitle);
+		 System.out.println("successfully landing on registration page");
+		return true;
+	}
+public static void verifyTextFromRegisterPage(String text)
+{
+	String actualText=text;
+	String expectedText=YourDetailsTextInRegisterPage.getText();
+	Assert.assertEquals(actualText, expectedText);
+	System.out.println("successfully verified msg :Your Personal Details");
+	//return ture;
+}
+public static void enterFirstName(String firstName)
+{
+	enterDataByActionClass(FirstnameReg, "FirstName", firstName);
+	//enterDataBysendKeys(FirstnameReg, "FirstName", firstName);
+}
+public static void enterLastname(String lastName)
+{
+	enterDataByActionClass(LastnameReg, "lastName", lastName);
+	
+}
+public static void enterEmail(String email)
+{
+	
+	enterDataBysendKeys(EmailnameReg, "Email", email);
+}
+public static void enterPassword(String password)
+{
+	
+	enterDataBysendKeys(Password, "password", password);
+	scrolltoWebElementJS(ContinueBtn, "Continue Button");
+	
+}
+public static void clickAgree()
+{
+	clickOnHiddenWebElementByJS(Agree_drag, "Agree");
+}
+public static void checkAgree()
+{
+	clickWebElement(chechAgree, "Check Agree");
+}
+public static void clickContinue()
+{
+	clickWebElementwithAction(ContinueBtn, "Continue");
+	
+}
+}

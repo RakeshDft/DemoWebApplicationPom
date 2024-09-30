@@ -1,0 +1,17 @@
+package com.pom.hrm.practice;
+
+public class AccessTest {
+	public void testAccess()
+	{
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c);
+		System.out.println(d);
+	}
+	private int a=4;
+	public int b=2;
+	protected int c=6;
+	int d=8;
+	
+
+}

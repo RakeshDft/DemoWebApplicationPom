@@ -1,0 +1,13 @@
+Feature: Register functionality.
+Background:
+Given I navigate to the web application
+Then I should see page tiltle as "Your Store"
+And I see web element "Desktops"
+
+
+Scenario: Verify user is able to Register with valid data.
+And I should click on MyAccount .
+And I should click on Register.
+Then I should see page title as "Register Account"
+And I see web element "Your Personal Details"
+And I close the browser

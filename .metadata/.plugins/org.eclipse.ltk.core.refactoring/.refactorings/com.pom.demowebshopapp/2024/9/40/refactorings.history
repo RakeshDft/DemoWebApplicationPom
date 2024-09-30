@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;sample.xlsx&apos; to &apos;com.pom.hrm/src/test/java/com.pom.hrm.testdata&apos;&#x0D;&#x0A;- Original project: &apos;com.pom.demowebshopapp&apos;&#x0D;&#x0A;- Destination element: &apos;com.pom.hrm/src/test/java/com.pom.hrm.testdata&apos;&#x0D;&#x0A;- Original element: &apos;sample.xlsx&apos;" description="Copy file" destination="=com.pom.hrm/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;com.pom.hrm.testdata" element1="src/test/java/com/pom/demowebshopapp/testdata/sample.xlsx" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1727630480600" units="0" version="1.0"/>
+</session>

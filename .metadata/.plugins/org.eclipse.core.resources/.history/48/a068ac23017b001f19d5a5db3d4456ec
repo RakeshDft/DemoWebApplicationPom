@@ -1,0 +1,30 @@
+package com.pom.hrm.practice;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+class TestJSMethods
+ {
+	 public static WebDriver driver;
+	 public TestJSMethods()
+	 {
+		 WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+	 }
+	 public void clickAndEnterByJS()
+	 {
+		 driver.get("https://demowebshop.tricentis.com/");
+		 driver.manage().window().maximize();
+		 driver.close();
+	 }
+ }
+public class JavaScriptMethodsTest {
+	public static void main(String args[])
+	{
+		TestJSMethods testJSMethods=new TestJSMethods();
+		testJSMethods.clickAndEnterByJS();
+	}
+
+}

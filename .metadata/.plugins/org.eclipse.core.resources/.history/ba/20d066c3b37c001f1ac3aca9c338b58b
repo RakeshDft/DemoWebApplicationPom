@@ -1,0 +1,18 @@
+package com.cucumber.demoopencart.UpdatedStepDef;
+
+import org.junit.runner.RunWith;
+
+
+@
+@CucumberOptions(
+    features = "E:\\com\\cucumber\\demoopencart\\Featue Files"
+    ,glue={"com/cucumber/demoopencart/UpdatedStepDef"},
+    tags = ("@smoke")
+    ,plugin={"html:target/report/cucumber.html"}
+
+	
+	)
+	public class TestRunner{
+
+}
+

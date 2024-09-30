@@ -1,0 +1,36 @@
+package com.cucumber.demoopencart.UpdatedStepDef;
+
+
+
+import com.cucumber.demoopencart.Base.Hooks;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+
+public class DashBoardTestDef extends Hooks {
+	@Given("I navigate to the web application")
+	public void i_navigate_to_the_web_application() {
+		launchBrowser();
+		navigateApplication();
+	   
+	}
+
+	@Then("I should see page tiltle as {string}")
+	public void i_should_see_page_tiltle_as(String string) {
+		OpenCartHeadersPage.verifyDashboardTitle();
+	}
+
+	@Then("I see web element {string}")
+	public void i_see_web_element(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("I close the browser")
+	public void i_close_the_browser() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+
+}

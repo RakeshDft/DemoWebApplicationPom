@@ -1,0 +1,5 @@
+package com.pom.hrm.testcases;
+
+public class HRM_Claim_ConfigurationTest {
+
+}

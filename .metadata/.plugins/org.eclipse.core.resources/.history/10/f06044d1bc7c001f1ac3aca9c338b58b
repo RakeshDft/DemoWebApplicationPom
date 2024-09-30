@@ -1,0 +1,27 @@
+package snippet;
+
+public class Snippet {
+	 <dependency>
+	        <groupId>io.cucumber</groupId>
+	        <artifactId>cucumber-junit</artifactId>
+	        <version>7.11.0</version> <!-- Use the latest compatible version -->
+	        <scope>test</scope>
+	    </dependency>
+	
+	    <!-- Cucumber Java dependency -->
+	    <dependency>
+	        <groupId>io.cucumber</groupId>
+	        <artifactId>cucumber-java</artifactId>
+	        <version>7.11.0</version> <!-- Same version as cucumber-junit -->
+	        <scope>test</scope>
+	    </dependency>
+	
+	    <!-- JUnit 4 dependency -->
+	    <dependency>
+	        <groupId>junit</groupId>
+	        <artifactId>junit</artifactId>
+	        <version>4.13.2</version>
+	        <scope>test</scope>
+	    </dependency>
+}
+

@@ -1,0 +1,12 @@
+Feature: Demopencart functionality
+Scenario: Click on ShowLaptops link
+Given If user is on Main page
+When Mouse hover on Laptops And Notebooks
+And Click on Show All Laptops And Notebooks
+Then verify Laptop And Notebook size
+
+Scenario: Click on FirstLaptops image
+Given If user is on Laptops and Notebooks
+When Click on FirstLaptop image
+And Click on Add To Cart
+Then verify success message.

@@ -1,0 +1,10 @@
+package com.pom.hrm.practice;
+
+public class TestAscii {
+	public static void main(String args[])
+	{
+		char a='a';
+		int asciiValue = (int) a;
+	}
+
+}

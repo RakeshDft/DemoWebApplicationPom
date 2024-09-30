@@ -1,0 +1,24 @@
+package com.pom.demowebshopapp.pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.pom.demowebshopapp.base.ActionEngine;
+
+import junit.framework.Assert;
+
+public class LoginPage extends ActionEngine {
+	static {
+		PageFactory.initElements(getWebDriver(),LoginPage.class);
+	}
+	
+	@FindBy(xpath="//h1[text()='Welcome, Please Sign In!']")
+	private static WebElement welcomeLoginMsg;
+	public static void validatewelcomeLoginMsg(String actual_LoginMsg)
+	{
+		String exp_LoginMsg=welcomeLoginMsg.getText();
+		Assert.assertEquals(exp_LoginMsg, actual_LoginMsg);
+	}
+
+}

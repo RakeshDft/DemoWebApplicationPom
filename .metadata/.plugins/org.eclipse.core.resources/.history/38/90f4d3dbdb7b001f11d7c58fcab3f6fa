@@ -1,0 +1,84 @@
+package com.cucumber.demoopencart.pages;
+
+import static org.testng.Assert.assertTrue;
+
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
+import org.openqa.selenium.support.PageFactory;
+
+import com.cucumber.demoopencart.stepdefinations.Driver;
+import com.relevantcodes.extentreports.LogStatus;
+
+import dev.failsafe.internal.util.Assert;
+
+public class OpenCartHeadersPage extends Driver{
+	
+	static
+	{
+		PageFactory.initElements(driver, OpenCartHeadersPage.class);
+	}
+	
+	@FindBy(xpath="//img[@title='Your Store']")
+	private static WebElement dashboardTtile;
+	@FindBys({@FindBy(xpath="//ul[@class='nav navbar-nav']/li/a")})
+	private static List<WebElement> headersList;
+	
+	@FindBy(xpath="//a[text()='Laptops & Notebooks']")
+	 private static WebElement Laptops_Notebooks;
+	 
+	  @FindBy(xpath = "//a[contains(text(),'Show All Laptops')]")
+	  private static WebElement ShowAllLaptops_Notebooks;
+	  @FindBy(xpath="//div[@class='list-group mb-3']/a[2]")
+	  private static WebElement actualLaptopsNoteBooksSize;
+	  
+	  @FindBys({@FindBy(xpath="//div[@class='image']")})
+	  private static List<WebElement> expectedLaptopNoteBooks;
+	  
+	  public static void mouseHoverLaptops()
+	  {
+		 Actions actions=new Actions(driver);
+			actions.moveToElement(Laptops_Notebooks).build().perform(); 
+	  }
+	  public static void clickShowAllLaptops()
+	  {
+		  Actions actions=new Actions(driver);
+		  actions.click(ShowAllLaptops_Notebooks).build().perform();
+	  }
+	  public static int getActualLaptopNteBooksize()
+	  {
+		String actualSize=actualLaptopsNoteBooksSize.getText(); 
+		String[] str=actualSize.split(" ");
+		String str1=str[3];
+		String[] str2=str1.split("");
+		int actualsize1=Integer.parseInt(str2[1]);
+		return actualsize1;
+	  }
+	  
+	public static int getExpectedLaptopNoteBookSize()
+	  {
+		 int expSize=expectedLaptopNoteBooks.size();
+		 return expSize;
+	  }
+	  public static void validateLaptopNoteBookSize()
+	  {
+		 int actualSize=getActualLaptopNteBooksize();
+		 int expectedSize=getExpectedLaptopNoteBookSize();
+		 if(actualSize==expectedSize)
+		 {
+			assertTrue(true);
+			 
+		 }
+		 else
+		 {
+			assertTrue(false);
+
+		 }
+	  }
+	  
+		
+
+}

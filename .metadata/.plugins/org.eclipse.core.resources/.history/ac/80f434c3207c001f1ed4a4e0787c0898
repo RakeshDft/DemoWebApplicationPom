@@ -1,0 +1,20 @@
+Feature: Register functionality.
+Background:
+Given I navigate to the web application
+Then I should see page tiltle as "Your Store"
+And I see web element "Desktops"
+
+
+Scenario: Verify user is able to Register with valid data.
+And I should click on MyAccount .
+And I should click on Register.
+Then I should see page title as "Register Account"
+And I should see webelement "Your Personal Details"
+And I should enter FirstName "Rakesh"
+And I should enter Last Name "Sreepathi"
+And I should enter E-Mail "rakesh.charana@gmail.com"
+And I should enter password "Harini1@"
+And I should click on Continue.
+
+
+And I close the browser

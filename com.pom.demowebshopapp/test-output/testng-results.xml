@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-30T17:05:14 IST" name="Default suite" finished-at="2024-09-30T17:05:24 IST" duration-ms="9593">
+    <groups>
+    </groups>
+    <test started-at="2024-09-30T17:05:14 IST" name="Default test" finished-at="2024-09-30T17:05:24 IST" duration-ms="9593">
+      <class name="com.pom.demowebshopapp.testcases.LoginTest">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:com.pom.demowebshopapp.testcases.LoginTest@5b7a7f33]" started-at="2024-09-30T17:05:13 IST" name="openBrowser" finished-at="2024-09-30T17:05:14 IST" duration-ms="1556" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="initReports()[pri:0, instance:com.pom.demowebshopapp.testcases.LoginTest@5b7a7f33]" started-at="2024-09-30T17:05:14 IST" name="initReports" finished-at="2024-09-30T17:05:14 IST" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initReports -->
+        <test-method is-config="true" signature="beforeTCExecution(java.lang.reflect.Method)[pri:0, instance:com.pom.demowebshopapp.testcases.LoginTest@5b7a7f33]" started-at="2024-09-30T17:05:14 IST" name="beforeTCExecution" finished-at="2024-09-30T17:05:14 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.pom.demowebshopapp.testcases.LoginTest.testLoginHomePage() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTCExecution -->
+        <test-method signature="testLoginHomePage()[pri:0, instance:com.pom.demowebshopapp.testcases.LoginTest@5b7a7f33]" started-at="2024-09-30T17:05:14 IST" name="testLoginHomePage" finished-at="2024-09-30T17:05:23 IST" duration-ms="8803" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginHomePage -->
+        <test-method is-config="true" signature="afterTCExecution(org.testng.ITestResult)[pri:0, instance:com.pom.demowebshopapp.testcases.LoginTest@5b7a7f33]" started-at="2024-09-30T17:05:23 IST" name="afterTCExecution" finished-at="2024-09-30T17:05:24 IST" duration-ms="371" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLoginHomePage status=SUCCESS method=LoginTest.testLoginHomePage()[pri:0, instance:com.pom.demowebshopapp.testcases.LoginTest@5b7a7f33] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTCExecution -->
+        <test-method is-config="true" signature="closeReports()[pri:0, instance:com.pom.demowebshopapp.testcases.LoginTest@5b7a7f33]" started-at="2024-09-30T17:05:24 IST" name="closeReports" finished-at="2024-09-30T17:05:24 IST" duration-ms="165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeReports -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.pom.demowebshopapp.testcases.LoginTest@5b7a7f33]" started-at="2024-09-30T17:05:24 IST" name="closeBrowser" finished-at="2024-09-30T17:05:24 IST" duration-ms="309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.pom.demowebshopapp.testcases.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

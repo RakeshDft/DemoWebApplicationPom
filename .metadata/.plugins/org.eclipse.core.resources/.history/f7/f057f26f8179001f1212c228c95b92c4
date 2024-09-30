@@ -1,0 +1,33 @@
+package com.pom.hrm.practice;
+
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+class TestKeys
+{
+	public WebDriver driver;
+	public Actions actions;
+
+	public TestKeys() {
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		actions = new Actions(driver);
+
+	}
+	public void keyActions(WebElement element)
+	{
+		actions.moveToElement(element).build().perform();
+		actions.keyDown(Keys.NULL).build().perform();
+		
+		//actions.sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ENTER).build().perform();
+	}
+}
+
+public class KeysActionTest {
+
+}

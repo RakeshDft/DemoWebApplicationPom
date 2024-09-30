@@ -1,0 +1,16 @@
+package com.cucumber.demoopencart.UpdatedStepDef;
+
+import io.cucumber.testng.*;
+
+
+
+@CucumberOptions(
+    features = "E:\\com\\cucumber\\demoopencart\\Featue Files"
+    ,glue={"com/cucumber/demoopencart/UpdatedStepDef"}
+    ,plugin={"html:target/report/cucumber.html"}
+
+	
+	)
+	public class TestRunner extends AbstractTestNGCucumberTests{
+
+}

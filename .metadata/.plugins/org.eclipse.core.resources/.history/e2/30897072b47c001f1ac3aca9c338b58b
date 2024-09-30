@@ -1,0 +1,6 @@
+Feature: Login functionality
+Scenario: Verify user is able to login with valid credentials
+Given If user is on Home page
+When Click on loginLink
+And Enter login details
+Then verify Logoutlink

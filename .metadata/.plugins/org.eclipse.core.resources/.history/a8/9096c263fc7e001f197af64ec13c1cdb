@@ -1,0 +1,16 @@
+package com.pom.demowebshopapp.testcases;
+
+import org.testng.annotations.Test;
+
+import com.pom.demowebshopapp.base.ActionEngine;
+import com.pom.demowebshopapp.pages.HomePage;
+
+public class LoginTest extends ActionEngine{
+	@Test
+	public void testLoginHomePage()
+	{
+		HomeTest.testHomeDemoApp();
+		HomePage.clickHomePageLoginLink();
+	}
+
+}

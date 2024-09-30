@@ -1,0 +1,69 @@
+package com.pom.hrm.practice;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+class AllWaits{
+	public static WebDriver driver;
+	public Actions actions;
+	WebDriverWait wait;
+	public AllWaits()
+	{
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		actions = new Actions(driver);
+		
+	}
+	public void testWaits()
+	{
+		driver.manage().window().maximize();
+		driver.get("https://demo-opencart.com/");
+		driver.manage().timeouts().implicitlyWait(45,TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(45,TimeUnit.SECONDS);
+		WebElement desktop=driver.findElement(By.xpath("//a[text()='Desktops']"));
+		testExplicitWait(desktop);
+		//testWaitBy(desktop);
+	
+		
+	}
+	
+		public void testExplicitWait(WebElement webElement)
+		{
+			 wait=new WebDriverWait(driver,30);
+			wait=new WebDriverWait(driver, 45);
+			
+				wait.until(ExpectedConditions.visibilityOf(webElement));
+				webElement.click();
+				System.out.println("wait performed");
+			
+			
+		}
+		public void testWaitBy(WebElement webElement)
+		{
+			WebDriverWait wait=new WebDriverWait(driver,30);
+			
+			wait.until(ExpectedConditions.visibilityOfElementLocated((By) webElement));
+					//invisibilityOfElementLocated((By)webElement);
+			System.out.println("wait performed");
+			
+		}
+	
+	}
+
+public class WaitsTest {
+	public static void main(String args[])
+	{
+		AllWaits alwaits=new AllWaits();
+		alwaits.testWaits();
+	}
+
+}

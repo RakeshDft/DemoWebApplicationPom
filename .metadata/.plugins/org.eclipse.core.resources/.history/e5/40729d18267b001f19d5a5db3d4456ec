@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.pom.hrm.practice.ActionsMethods"/>
+      <class name="com.pom.hrm.base.ActionEngine"/>
+      <class name="com.pom.hrm.testcases.HRM_RecruitmentTest"/>
+      <class name="com.pom.hrm.practice.ActionsMethods_One"/>
+      <class name="com.pom.hrm.practice.AllWaits"/>
+      <class name="com.pom.hrm.practice.WaitsTest"/>
+      <class name="com.pom.hrm.testcases.HRM_LoginTests"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

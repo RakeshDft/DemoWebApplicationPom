@@ -1,0 +1,30 @@
+package com.pom.hrm.practice;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+ class TypesOfScreenshotTest {
+	public static WebDriver driver;
+	
+	public TypesOfScreenshotTest()
+	{
+		WebDriverManager.chromedriver().setup();
+	}
+	public void screenShotForWebElementLevel()
+	{
+		driver.get("https://bstackdemo.com/signin");
+		driver.manage().window().maximize();
+		driver.close();
+	}
+
+}
+public class ScreenshotTypesTest 
+{
+	public static void main(String args[])
+	{
+		TypesOfScreenshotTest ts=new TypesOfScreenshotTest();
+		ts.screenShotForWebElementLevel();
+	}
+}

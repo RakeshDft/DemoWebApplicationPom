@@ -1,0 +1,6 @@
+Feature: DashBoard functionality.
+Scenario: Verify user is on DashBoard
+Given I navigate to the web application
+Then I should see page tiltle as "Your Store"
+And I see web element "Desktops"
+And I close the browser

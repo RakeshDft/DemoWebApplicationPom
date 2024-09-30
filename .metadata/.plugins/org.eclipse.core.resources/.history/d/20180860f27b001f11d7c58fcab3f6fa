@@ -1,0 +1,19 @@
+package com.pom.hrm.practice;
+
+ class EncapsulationTest3 extends EncapsulationTest1{
+	
+	@Override
+	public String getName() {
+		System.out.println("my name is :");
+		return super.getName();
+	}
+ }public class EncapsulationTest2{
+	public static void main(String args[]) {
+		EncapsulationTest3 e=new EncapsulationTest3();
+		e.display();
+		e.getName();
+		e.getSub();
+		
+	}
+
+}

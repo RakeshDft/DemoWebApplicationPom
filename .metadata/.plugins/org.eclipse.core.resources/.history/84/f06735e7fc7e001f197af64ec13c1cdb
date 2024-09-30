@@ -1,0 +1,18 @@
+package com.pom.demowebshopapp.testcases;
+
+import java.io.IOException;
+
+import org.testng.annotations.Test;
+
+import com.pom.demowebshopapp.base.ActionEngine;
+import com.pom.demowebshopapp.pages.HomePage;
+
+public class LoginTest extends ActionEngine{
+	@Test
+	public void testLoginHomePage() throws IOException, InterruptedException
+	{
+		HomeTest.testHomeDemoApp();
+		HomePage.clickHomePageLoginLink();
+	}
+
+}
